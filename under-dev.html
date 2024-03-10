@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Development</title>
+    <style>
+
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+
+
+        .glo {
+    top: -25px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-family: satoshi;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, #005077, #005fdc, #00ccff, #00eaff, #00ccff, #005fdc, #005077);
+    background-size: 400%;
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.back-box-container {
+    top: 50px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: satoshi;
+}
+
+.back-box {
+    width: 90%;
+    text-align: center;
+    max-width: 300px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 9px;
+}
+
+.back-box h1 {
+    text-align: center;
+    color: black;
+    padding: 30px 150px 20px;
+}
+
+.back-box p {
+    color: black;
+    padding: 0px 150px 50px;
+}
+
+.back-box a {
+    text-decoration: none;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    .back-box-container {
+        position: absolute;
+    }
+    .back-box {
+        width: 85vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    } 
+    .back-box p {
+        padding: 0px 30px 40px;
+    }
+    .back-box h1 {
+        font-size: 30px;
+        width: 90%;
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="back-box-container">
+        <div class="back-box">
+            <h1>This page is currently under development</h1>
+            <p>We're working on something exciting. Stay tuned!</p>
+            <a href="https://moze-media.com/">
+            <p>Development by © Moze Media</p>
+            </a>
+            <a href="index.html">
+                <button class="glo">BACK TO HOME PAGE</button>
+            </a>
+            <p>click the button above to go back to our home page.</p>
+
+        </div>
+    </div>
+
+<script>
+    // Handle form submission (you can replace this with your own logic)
+    document.getElementById('subscribe-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const email = document.querySelector('#subscribe-form input[type="email"]').value;
+        console.log(`Subscribed with email: ${email}`);
+    });
+</script>
+
+</body>
+</html>
